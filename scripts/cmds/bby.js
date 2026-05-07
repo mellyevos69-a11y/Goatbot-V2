@@ -4,8 +4,8 @@ const baseApiUrl = async () => {
 };
 
 module.exports.config = {
-    name: "bby",
-    aliases: ["baby", "bbe", "babe"],
+    name: "hey",
+    aliases: ["hey", "no", "yes"],
     version: "6.9.0",
     author: "dipto",
     countDown: 0,
@@ -65,7 +65,7 @@ module.exports.onStart = async ({
                 return api.sendMessage(`Total Teach = ${data.length}\n👑 | List of Teachers of baby\n${output}`, event.threadID, event.messageID);
             } else {
                 const d = (await axios.get(`${link}?list=all`)).data;
-                return api.sendMessage(`❇️ | Total Teach = ${d.length || "api off"}\n♻️ | Total Response = ${d.responseLength || "api off"}`, event.threadID, event.messageID);
+                return api.sendMessage(`what | Total Teach = ${d.length || "api off"}\n♻️ | Total Response = ${d.responseLength || "api off"}`, event.threadID, event.messageID);
             }
         }
 
